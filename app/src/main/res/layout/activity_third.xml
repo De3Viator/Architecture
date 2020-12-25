@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/btnStar"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:text="*" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:text="8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/btnHash"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:text="#" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="188dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:focusable="auto"
+        android:focusableInTouchMode="false"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <Button
+        android:id="@+id/btnClearAll"
+        android:layout_width="95dp"
+        android:layout_height="73dp"
+        android:text="Clear All "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/etPhone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <Button
+        android:id="@+id/btnBackspace"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_marginStart="44dp"
+        android:text="⌫"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/etPhone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
